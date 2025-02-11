@@ -1,0 +1,258 @@
+/* Main formatting ********************************************************** */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    color: #834333;
+    background-color: #FFFAED;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* I Do | Greater Boston Wedding Planning */
+.top-left-title {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 24px;
+    color: #688363;
+}
+
+/* Page title */
+.page-title {
+    margin-top: 100px;
+    font-size: 100px;
+    color: #688363;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* H3 header */
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #688363;
+}
+
+/* H2 header */
+h2 {
+    color: #688363;
+    text-align: left;
+}
+
+/* Services page text */
+.package-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f7edd6;
+    color: #834333;
+    text-align: left;
+}
+
+/* Services page text */
+.services-list {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+/* Services page text */
+.services-list li {
+    margin-bottom: 15px;
+}
+
+/* Services page text */
+.services-list li strong {
+    color: #688363;
+}
+
+/* Contact page form */
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #834333;
+    background-color: #834333;
+    color: #FFFAED;
+}
+
+/* Contact page form */
+input[type="submit"] {
+    background-color: #834333;
+    color: #FFFAED;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contact page form */
+input[type="submit"]:hover {
+    background-color: #688363;
+    color: #FFFAED;
+}
+
+/* Footer */
+footer {
+    background-color: #688363; 
+    color: #FFFAED;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+/* ************************************************************************** */
+
+
+/* Nav bar ****************************************************************** */
+div.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 35px 20px;
+}
+
+ul#nav {
+    padding: 0;
+    margin: 0;
+}
+
+ul#nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+ul#nav li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #688363;
+    font-size: 20px;
+}
+
+ul#nav li a:hover {
+    background-color: #688363;
+    color: #FFFAED;
+}
+/* ************************************************************************** */
+
+
+/* Image formatting ********************************************************* */
+#banner {
+    background-image: url('images/banner.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    color: #688363;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    line-height: 250px;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#contact-img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#services-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    float: right;
+}
+
+/* Portfolio page images */
+.portfolio-images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Portfolio page images */
+.portfolio-images img:hover {
+    transform: scale(1.05);
+}
+
+/* ************************************************************************** */
+
+
+/* Mobile formatting ******************************************************** */
+@media (max-width: 768px) {
+    ul#nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .top-left-title {
+        font-size: 10px;
+    }
+
+    body {
+        text-align: left;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+    form {
+        padding: 10px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #banner {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    .package-section {
+        padding: 15px;
+    }
+
+    .package-section h2 {
+        font-size: 24px;
+    }
+
+    #services-img {
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    .services-list {
+        padding-left: 15px;
+    }
+}
+/* ************************************************************************** */
